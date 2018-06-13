@@ -7,7 +7,7 @@
     "test": "eslint . && jest --coverage",
     "testWatch": "jest --coverage --watchAll",
     "test-nolint": "jest --coverage",
-    "lint": "eslint **/.js"
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
