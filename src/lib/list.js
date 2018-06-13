@@ -13,13 +13,7 @@ const List = module.exports = class {
         return this.length;
     }
     
-    forEach(callback, _currentValue) {
-        if (typeof callback !== 'function') {
-            throw new Error('Expeced a function');
-        }
-        if (!_currentValue) {
-            throw new Error('Undefined');
-        }
+    forEach() {
         return this.length;
     }
 
