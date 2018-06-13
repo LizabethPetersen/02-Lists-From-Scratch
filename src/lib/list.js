@@ -12,10 +12,6 @@ const List = module.exports = class {
         }
         return this.length;
     }
-    
-    forEach() {
-        return this.length;
-    }
 
     map(callback) {
         if (typeof callback !== 'function') {
@@ -31,11 +27,11 @@ const List = module.exports = class {
         return result;
         }
 
-    filter(currentValue, thisValue) {
-        if (!currentValue) {
+    filter(callback) {
+        if (!callback) {
             throw new Error('List is empty');
         }
-        if (thisValue !== this.length) {
+        if (!this.length) {
             throw new Error('Undefined');
         }
         for (let i = 0; i < this.length; i++) {
@@ -58,4 +54,17 @@ const List = module.exports = class {
         }
         return accumulator;
     }
-};
+    forEach(callback) {
+        if (typeof callback != 'function') {
+            throw new Error('Expected a function');
+        }
+        if (!this.length) {
+            return('Undefined');
+        }
+        for (let i = 0; i < args.length; i++) {
+            this[this.length] = args[i];
+            this.length += 1;
+        }
+        return this.length;
+    }
+}
