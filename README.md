@@ -10,4 +10,4 @@ reduce() – 2 aritys: callback and accumulator;
 
 
 
-In your `README.md`, describe the exported values of each module you have defined. Every function description should include its airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and its behavior (for both valid and invalid use). Feel free to add any additional information in your `README.md` that you would like.
+In your `README.md`, describe the exported values of each module you have defined. Every function description should include its arity (expected number of parameters the expected data for each parameter (data-type and limitations), and its behavior (for both valid and invalid use). Feel free to add any additional information in your `README.md` that you would like.

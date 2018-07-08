@@ -3,11 +3,12 @@
 const List = module.exports = class {
   constructor() {
     this.length = 0;
+    this.args = [];
   }
  
-  push(...args) {
+  push(...args) { 
     for (let i = 0; i < args.length; i++) {
-      this[this.length] = args[i];
+      this[this.length] = args[i]; /* eslint-disable-line */
       this.length += 1;
     }
     return this.length;
@@ -21,7 +22,7 @@ const List = module.exports = class {
       return ('Undefined');
     }
     for (let i = 0; i < this.length; i++) {
-      this[this.length] = args[i];
+      this[this.length] = args[i]; /* eslint-disable-line */
       this.length += 1;
     }
     return this.length;
@@ -41,7 +42,7 @@ const List = module.exports = class {
     return result;
   }
 
-  filter(callback, j ) {
+  filter(callback, result) {
     if (!callback) {
       throw new Error('List is empty');
     }
@@ -52,8 +53,7 @@ const List = module.exports = class {
     for (let j = 0; j < this.length; j++) {
       result.push(newArray);
     }
-      return result;
-    }
+    return result;
   }
 
   reduce(callback, accumulator) {
@@ -71,4 +71,5 @@ const List = module.exports = class {
     }
     return accumulator;
   }
-}};
+};
+

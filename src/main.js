@@ -1,3 +1,3 @@
-'use strict';
+require('./lib/scope/index');
 
-require('./../src/lib/list');
+require('./lib/list/lib/fp');
