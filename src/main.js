@@ -1,3 +1,3 @@
-'use strict';
+require('./lib/scope/index');
 
-console.log('Hello World!');
+require('./lib/list/lib/fp');
