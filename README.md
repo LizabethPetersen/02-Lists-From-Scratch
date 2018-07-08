@@ -1,7 +1,9 @@
 #02: Tools and Context
+[![Build Status](https://travis-ci.org/LizabethPetersen/02-Lists-From-Scratch.svg?branch=master)](https://travis-ci.org/LizabethPetersen/02-Lists-From-Scratch)
+
 
 ##  Exported Values
-I have defined a general list module which takes in any arguments passed into it. The list class has one argument, which is its length.
+I have defined a List class which takes in any arguments passed into it. The List has one argument, which is its length.
 
 
 ## Function Aritys
